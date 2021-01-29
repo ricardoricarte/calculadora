@@ -1,0 +1,193 @@
+html {
+  margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font-family: 'Poppins', sans-serif;
+}
+
+  body {
+  background: linear-gradient(107.12deg, #3AD6E0 0.62%, rgba(52, 247, 206, 0.390625) 53.42%, #32ED91 99.99%, rgba(255, 255, 255, 0) 100%), #FFFFFF;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.glass {
+  background: linear-gradient(114.22deg, rgba(255, 255, 255, 0.1) -0.07%, rgba(255, 255, 255, 0.4) 100.05%);
+  backdrop-filter: blur(100px);
+/* Note: backdrop-filter has minimal browser support */
+  border: 3px solid;
+  border-image-source: linear-gradient(114.22deg, rgba(255, 255, 255, 0.12) -0.07%, rgba(255, 255, 255, 0.48) 100.05%);
+  border-radius: 30px;
+
+}
+
+#calculator-body {
+  min-height: 80vh;
+  min-width: 60vw;
+  display: grid;
+  grid-template-columns: 20vw auto auto auto auto;
+  grid-template-rows: 15vh auto;
+}
+
+#vertical-dashboard {
+  grid-column-start: 1;
+  grid-row-start: 1;
+  grid-column-end: 1;
+  grid-row-end: end;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  border-bottom-right-radius: 0px;
+  border-top-right-radius: 0px;
+  padding: 0rem 4.125rem;
+  margin: 0rem;
+}
+
+#logo-calculator {
+  margin-bottom: 2vh;
+}
+#central-text {
+  min-width: 10vw;
+
+}
+#vertical-dashboard span {
+  background: -webkit-linear-gradient(90.05deg, #0876ad 1.2%, rgba(153, 8, 238, 0.44) 96.87%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.25);
+  font-size: 1.6rem;
+}
+
+#logo-div {
+  margin-top: 4.125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#contact-info {
+  margin-bottom: 4.125vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+#icons svg {
+  margin-top: 2vh;
+}
+
+#linkedin {
+  margin-left: 0.5vw;
+  margin-right: 0.5vw;
+}
+
+#bauer {
+  font-weight: 700;
+  letter-spacing: 0.5vw;
+  margin: 0px;
+}
+
+#result-screen {
+  background: linear-gradient(114.22deg, rgba(122, 122, 122, 0.1) -0.07%, rgba(92, 92, 92, 0.02) 100.05%);
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-column-end: end;
+  grid-row-end: 1;
+  border: 3px solid;
+  border-image-source: linear-gradient(114.22deg, rgba(255, 255, 255, 0.06) -0.07%, rgba(255, 255, 255, 0.24) 100.05%);
+  border-bottom-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+#keypad {
+  grid-column-start: 2;
+  grid-row-start: 2;
+  grid-column-end: end;
+  grid-row-end: end;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+  border-bottom-left-radius: 0px;
+  justify-items: center;
+  align-content: center;
+}
+
+#keys-container-grid {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px 100px;
+  grid-template-rows: 100px 100px 100px 100px;
+  column-gap: 30px;
+  row-gap: 30px;
+  padding: 66px;
+}
+
+#keys-container-grid button {
+  background: linear-gradient(129.72deg, #FFFFFF 0%, rgba(255, 255, 255, 0.7) 100%);
+  box-shadow: 3px 4px 8px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 30px;
+  outline: none;
+  border: none;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+#keys-container-grid button {
+    text-shadow: 2px 2px 1px rgba(255, 255, 255, 0.2);
+    color:rgba(73, 73, 73, 0.808);
+    font-size: 4.375rem;
+    font-weight: 300;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+}
+
+
+#keys-container-grid button:active {
+  box-shadow: 3px 2px 6px 1px rgba(0, 0, 0, 0.25);
+  transform: translateY(3px);
+}
+
+#clear {
+  font-size: 2.375rem !important;
+}
+
+#result {
+  grid-column-start: 3;
+  grid-column-end: 6;
+  font-size: 6.875rem !important;
+}
+
+#result-screen {
+  grid-column-start: 2;
+  grid-column-end: end;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#result-screen input {
+  background: -webkit-linear-gradient(272.21deg, rgba(3, 110, 87, 0.3) -46.53%,#19a4e9 178.67%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+  font-size: 4.375rem;
+  font-weight: 300;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  border: none;
+  max-width: 50vw;
+}
+
+/* ajeitar a sombra interna do RR */
